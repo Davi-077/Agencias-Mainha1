@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Administração | Agência Mainha</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+<a class="marca" href="../index.html"><img src="../imagens/logo.png" alt="Agência Mainha"></a>
+<nav><a href="../index.html">Voltar ao site</a></nav>
+</header>
+<main class="pagina">
+<h1>Área de administração</h1>
+<p>Edite as informações do projeto escolar neste navegador.</p>
+
+<section class="bloco">
+<h2>Empresa</h2>
+<label>Nome<input id="empresa" class="campo"></label>
+<label>Frase principal<input id="frase" class="campo"></label>
+<label>Sobre a empresa<textarea id="sobre" class="campo" rows="4"></textarea></label>
+</section>
+
+<section class="bloco">
+<h2>Pacote</h2>
+<label>Nome<input id="pacote" class="campo"></label>
+<label>Destino<input id="destino" class="campo"></label>
+<label>Preço<input id="preco" class="campo" type="number" min="0" step="0.01"></label>
+<label>Descrição<textarea id="descricao" class="campo" rows="4"></textarea></label>
+</section>
+
+<section class="bloco">
+<h2>Cashback</h2><div id="clientes"></div>
+</section>
+
+<button class="botao" onclick="salvar()">Salvar</button>
+<button class="botao secundario" onclick="restaurar()">Restaurar</button>
+<div id="status" class="resultado"></div>
+
+<div class="aviso"><strong>Atenção:</strong> esta versão salva as alterações somente neste navegador.
+Para um painel que altere o site público para todos, precisaremos adicionar autenticação e armazenamento
+em um serviço apropriado. Não coloque sua senha real no código.</div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
