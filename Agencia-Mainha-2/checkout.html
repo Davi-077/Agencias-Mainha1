@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compra | Agência Mainha</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="topo"><a class="marca" href="index.html"><img src="imagens/logo.png" alt="Agência Mainha"></a>
+<nav><a href="index.html">Início</a><a href="pacotes.html">Pacotes</a><a href="clube.html">Mainha Club</a><a href="quem-somos.html">Quem Somos</a></nav></header>
+<main class="pagina"><h1>Simulação de compra</h1>
+<label>Nome do cliente<input id="cliente" class="campo"></label>
+<label>Valor do pacote<input id="valor" class="campo" type="number" min="0" value="0"></label>
+<label>Cashback a usar<input id="cashback" class="campo" type="number" min="0" value="0"></label>
+<label>Forma de pagamento<select id="pagamento" class="campo"><option>PIX</option><option>Cartão</option><option>Boleto</option></select></label>
+<button class="botao" onclick="calcularCompra()">Calcular</button>
+<div id="total" class="resultado"></div></main><footer>Agência Mainha</footer>
+<script src="js/compra.js"></script></body></html>
