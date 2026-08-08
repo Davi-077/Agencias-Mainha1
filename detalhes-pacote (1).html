@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalhes do Pacote | Agência Mainha</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f8f4ed;color:#263238;line-height:1.6}
+header{background:#fff;padding:16px 6%;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+.menu{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{max-width:150px;max-height:65px;object-fit:contain}
+nav{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
+nav a{color:#263238;text-decoration:none;font-weight:600}
+.hero{max-width:1100px;margin:35px auto 0;padding:0 20px}
+.capa{width:100%;height:360px;object-fit:cover;border-radius:22px;display:block;background:#ddd}
+.conteudo{max-width:900px;margin:-55px auto 50px;position:relative;background:#fff;border-radius:22px;padding:35px;box-shadow:0 8px 30px rgba(0,0,0,.10)}
+.etiqueta{display:inline-block;background:#e9c46a;color:#263238;padding:6px 14px;border-radius:30px;font-size:14px;font-weight:bold;margin-bottom:12px}
+h1{font-size:36px;margin-bottom:10px}.descricao{color:#667;margin-bottom:25px}
+.informacoes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:30px}
+.info{background:#f8f4ed;border-radius:14px;padding:16px}.info strong{display:block;margin-bottom:4px}
+section{margin-top:30px}h2{margin-bottom:15px;font-size:24px}
+.dia{border-left:4px solid #e9c46a;background:#fafafa;padding:18px 20px;margin-bottom:14px;border-radius:0 14px 14px 0}
+.dia h3{margin-bottom:7px}.lista{padding-left:20px}
+.acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:35px}
+.botao{display:inline-block;padding:13px 22px;border-radius:30px;background:#e9c46a;color:#263238;text-decoration:none;font-weight:bold}
+.botao.secundario{background:#263238;color:#fff}
+footer{text-align:center;padding:30px 20px;color:#667}
+@media(max-width:700px){.menu{flex-direction:column}.informacoes{grid-template-columns:1fr}.capa{height:250px}.conteudo{margin:-30px 15px 40px;padding:24px}h1{font-size:29px}}
+</style>
+</head>
+<body>
+<header><div class="menu">
+<img class="logo" src="imagens/logo.png" alt="Agência Mainha">
+<nav><a href="index.html">Início</a><a href="pacotes.html">Pacotes</a><a href="clube.html">Mainha Club</a><a href="quem-somos.html">Quem Somos</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><img class="capa" src="imagens/capa-pacote.jpg" alt="Imagem do destino"></div>
+<div class="conteudo">
+<span class="etiqueta">PACOTE DE VIAGEM</span>
+<h1>Nome do Pacote</h1>
+<p class="descricao">Uma experiência especial preparada para você aproveitar cada momento da viagem.</p>
+
+<div class="informacoes">
+<div class="info"><strong>📅 Duração</strong><span>A definir</span></div>
+<div class="info"><strong>📍 Destino</strong><span>A definir</span></div>
+<div class="info"><strong>👥 Experiência</strong><span>Pacote completo</span></div>
+</div>
+
+<section><h2>🗺️ Roteiro da viagem</h2>
+<div class="dia"><h3>Dia 1 — Chegada</h3><p>Informações e programação do primeiro dia serão adicionadas aqui.</p></div>
+<div class="dia"><h3>Dia 2 — Programação</h3><p>Adicione aqui os passeios e atividades do segundo dia.</p></div>
+<div class="dia"><h3>Dia 3 — Programação</h3><p>Adicione aqui os passeios e atividades do terceiro dia.</p></div>
+<div class="dia"><h3>Dia 4 — Programação</h3><p>Adicione aqui os passeios e atividades do quarto dia.</p></div>
+</section>
+
+<section><h2>✈️ Voos</h2><p>Itinerário dos voos será informado aqui quando estiver disponível.</p></section>
+<section><h2>🏨 Hospedagem</h2><p>Informações sobre a hospedagem serão adicionadas aqui.</p></section>
+<section><h2>🎟️ O que está incluído</h2><ul class="lista"><li>Informação a definir</li><li>Informação a definir</li><li>Informação a definir</li></ul></section>
+<section><h2>ℹ️ Informações importantes</h2><p>As informações definitivas do pacote serão atualizadas antes da abertura das vendas.</p></section>
+
+<div class="acoes"><a class="botao" href="checkout.html">Continuar para compra</a><a class="botao secundario" href="pacotes.html">Voltar aos pacotes</a></div>
+</div>
+</main>
+<footer>Agência Mainha — Rumo a novas aventuras.</footer>
+</body>
+</html>
